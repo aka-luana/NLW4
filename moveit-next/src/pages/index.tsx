@@ -6,9 +6,10 @@ import { Profile } from "../components/Perfil";
 import styles from '../styles/pages/Home.module.css'; 
 
 import Head from 'next/head';
+import { ChallengeBox } from "../components/ChallengeBox";
 
 export default function Home() {
-  return (
+  return(
     <div className={styles.container}>
         <Head>
           <title>Início | Move.it</title>
@@ -24,9 +25,9 @@ export default function Home() {
         </div>
 
         <div>
-          
+          <ChallengeBox />
         </div>
       </section>
     </div>
-  )
+  );
 }
